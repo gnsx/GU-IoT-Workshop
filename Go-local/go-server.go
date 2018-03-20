@@ -27,10 +27,9 @@ import (
 	"net/http"
 	"io"
 	"golang.org/x/net/websocket"
-
+	"time"
 	"fmt"
 )
-
 
 func DefaultListenAndServeWebsocket() error {
 	if err := AddWebsocketHandler("/mqtt", "test.mosquitto.org:1883"); err != nil {
@@ -154,15 +153,29 @@ func init() {
 	flag.Parse()
 }
 
-func main() {
-	svr := &service.Server{
-		KeepAlive:        keepAlive,
-		ConnectTimeout:   connectTimeout,
-		AckTimeout:       ackTimeout,
-		TimeoutRetries:   timeoutRetries,
-		SessionsProvider: sessionsProvider,
-		TopicsProvider:   topicsProvider,
+var mqttaddr = "tcp://:1883"
+
+var svr = &service.Server {
+
+	KeepAlive:        keepAlive,
+	ConnectTimeout:   connectTimeout,
+	AckTimeout:       ackTimeout,
+	TimeoutRetries:   timeoutRetries,
+	SessionsProvider: sessionsProvider,
+	TopicsProvider:   topicsProvider,
+}
+
+
+
+func listenMqtt(svr *service.Server ) {
+	err := svr.ListenAndServe(mqttaddr)
+	if err != nil {
+		glog.Errorf("surgemq/main: %v", err)
 	}
+}
+
+func main() {
+
 
 	var f *os.File
 	var err error
@@ -193,9 +206,9 @@ func main() {
 		os.Exit(0)
 	}()
 
-	mqttaddr := "tcp://:1883"
 
-	
+
+
 	if len(wsAddr) > 0 || len(wssAddr) > 0 {
 		addr := "tcp://127.0.0.1:1883"
 		AddWebsocketHandler("/mqtt", addr)
@@ -209,12 +222,25 @@ func main() {
 		}
 	}
 
-	fmt.Printf("Reached2")
+
 	/* create plain MQTT listener */
-	err = svr.ListenAndServe(mqttaddr)
+	/*err = svr.ListenAndServe(mqttaddr)
 	if err != nil {
 		glog.Errorf("surgemq/main: %v", err)
+	}*/
+	fmt.Printf("\nSpawnedMQTTServer\n")
+	go listenMqtt(svr)
+
+	time.Sleep(time.Millisecond * 7500)
+
+
+	fmt.Printf("WaitingForever\n")
+	for i:=0;i<500;i++{
+		//fmt.Printf("\nReached")
+		time.Sleep(time.Millisecond * 2500)
+		if i == 499{
+			i=1
+		}
 	}
 
-	
 }

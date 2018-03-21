@@ -11,7 +11,8 @@ Exercise2 : Demo Application to show data flowing from ESP32 to AWS-IoT, using t
 
 
 **GoLang SDK x64 and ArduinoIDE with ESP32**
-    - https://www.dropbox.com/sh/2dduvqee07ot1ce/AAAzkfPG2642DfqPg50WTu7Da?dl=0
+  - https://www.dropbox.com/sh/2dduvqee07ot1ce/AAAzkfPG2642DfqPg50WTu7Da?dl=0
+
 
 
 

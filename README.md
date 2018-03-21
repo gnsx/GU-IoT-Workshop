@@ -15,3 +15,5 @@ https://www.dropbox.com/sh/2dduvqee07ot1ce/AAAzkfPG2642DfqPg50WTu7Da?dl=0
 
 
 Get 7Zip from here https://www.7-zip.org/download.html
+
+If you have AntiVirus issues, turn off your security ;-)

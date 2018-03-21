@@ -29,3 +29,5 @@ Exercise2 : Demo Application to show data flowing from ESP32 to AWS-IoT, using t
     - https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 6.  MQTT.fx
     - http://mqttfx.jensd.de/index.php/download
+7.  Redash
+    - https://raw.githubusercontent.com/getredash/redash/master/setup/ubuntu/bootstrap.sh

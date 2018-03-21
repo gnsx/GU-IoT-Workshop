@@ -14,6 +14,13 @@ Exercise2 : Demo Application to show data flowing from ESP32 to AWS-IoT, using t
 https://www.dropbox.com/sh/2dduvqee07ot1ce/AAAzkfPG2642DfqPg50WTu7Da?dl=0
 
 
-Get 7Zip from here https://www.7-zip.org/download.html
 
+**Tools**
+1.  7Zip
+    - Get 7Zip from here https://www.7-zip.org/download.html
+2.  NoSQLBooster
+    - https://nosqlbooster.com/downloads
+3.  MongoDB
+    - https://www.mongodb.com/download-center#community
+    
 If you have AntiVirus issues, turn off your security ;-)

@@ -24,5 +24,7 @@ https://www.dropbox.com/sh/2dduvqee07ot1ce/AAAzkfPG2642DfqPg50WTu7Da?dl=0
     - https://www.mongodb.com/download-center#community
 4.  IntelliJ IDEA Community Edition
     - https://www.jetbrains.com/idea/download/
+5.  USB Driver for ESP32-Devkit-v1
+    - https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
     
 If you have AntiVirus issues, turn off your security ;-)

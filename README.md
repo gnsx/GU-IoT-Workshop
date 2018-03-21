@@ -1,4 +1,4 @@
-# GU-IoT-Workshop
+# IoT-Workshop-180322
 Exercise1 : Demo Application to show data flowing between ESP32 and a server hosted on a computer. MQTT topics are used to pub/sub the data and send GPIO events to be saved in a mongoDB instance
 
 1. MQTT Server Reference 

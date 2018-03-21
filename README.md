@@ -29,5 +29,3 @@ Exercise2 : Demo Application to show data flowing from ESP32 to AWS-IoT, using t
     - https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 6.  MQTT.fx
     - http://mqttfx.jensd.de/index.php/download
-    
-If you have AntiVirus issues, turn off your security ;-)

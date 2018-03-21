@@ -17,10 +17,12 @@ https://www.dropbox.com/sh/2dduvqee07ot1ce/AAAzkfPG2642DfqPg50WTu7Da?dl=0
 
 **Tools**
 1.  7Zip
-    - Get 7Zip from here https://www.7-zip.org/download.html
+    - https://www.7-zip.org/download.html
 2.  NoSQLBooster
     - https://nosqlbooster.com/downloads
 3.  MongoDB
     - https://www.mongodb.com/download-center#community
+4.  IntelliJ IDEA Community Edition
+    - https://www.jetbrains.com/idea/download/
     
 If you have AntiVirus issues, turn off your security ;-)
